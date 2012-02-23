@@ -18,6 +18,10 @@
 #include "ebtree/ebmbtree.h"
 #include "shctx.h"
 
+#ifndef MAP_ANONYMOUS
+  #define MAP_ANONYMOUS MAP_ANON
+#endif
+
 struct shared_session {
         struct ebmb_node key;
         unsigned char key_data[SSL_MAX_SSL_SESSION_ID_LENGTH];
