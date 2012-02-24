@@ -56,7 +56,7 @@
 #include <openssl/ssl.h>
 #include <openssl/err.h>
 #include <openssl/engine.h>
-#include <ev.h>
+#include <uv.h>
 
 #include "ringbuffer.h"
 #include "shctx.h"
